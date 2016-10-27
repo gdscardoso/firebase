@@ -1,0 +1,71 @@
+<!doctype html>
+<html ng-app="app" ng-cloak>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="pt-br" />
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="bower_components/angular-material/angular-material.css">
+  <link rel="stylesheet" href="bower_components/angular-material-data-table/dist/md-data-table.css">
+  <link rel="stylesheet" href="bower_components/font-awesome/fonts/fontawesome-webfont.svg">
+  <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body layout="column" ng-controller="loginController as vm">
+
+  <div layout="column" layout-fill>
+    <md-toolbar>
+      <div class="md-toolbar-tools">
+        <span ng-click="vm.open()">Toolbar</span>
+        <span flex></span>
+
+        <md-button>
+          Projetos
+        </md-button>
+
+        <md-button>
+          Tarefas
+        </md-button>
+
+        <md-button>
+          Administracao
+        </md-button>
+        <span flex-auto></span>
+
+      </div>
+    </md-toolbar>
+
+    <div class="container" layout="row" flex>
+      <md-sidenav md-component-id="sidenav" md-is-locked-open="vm.isOpen" class="md-whiteframe-4dp" flex="20">Sidenav</md-sidenav>
+      <md-content id="content" flex="80"> Content</md-content>
+    </div>
+
+  </div>
+
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-animate/angular-animate.js"></script>
+  <script src="bower_components/angular-aria/angular-aria.js"></script>
+  <script src="bower_components/angular-messages/angular-messages.js"></script>
+  <script src="bower_components/angular-material/angular-material.js"></script>
+  <script src="bower_components/angular-material-data-table/dist/md-data-table.js"></script>
+  <script src="bower_components/angularfire/dist/angularfire.js"></script>
+  <script src="bower_components/firebase/firebase.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="bower_components/underscore/underscore.js"></script>
+
+
+  <!-- Your application bootstrap  -->
+  <script src="app.js "></script>
+</body>
+
+</html>
+
+<!--
+Copyright 2016 Google Inc. All Rights Reserved. 
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+-->

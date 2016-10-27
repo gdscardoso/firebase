@@ -1,0 +1,11 @@
+body {
+    font-family: "Roboto";
+}
+
+md-sidenav {
+    padding: 6px;
+}
+
+md-content {
+    padding: 6px;
+}
